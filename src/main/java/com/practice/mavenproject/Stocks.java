@@ -44,7 +44,6 @@ public class Stocks {
 		
 		HashMap<String, String> sharePrices = new HashMap<String, String>();
 		for (int i = 0; i < currentPrices.size(); i++) {
-			System.out.println("Key=" + companies.get(i).getText().trim()+"  " + "Value+" + currentPrices.get(i).getText().trim());
 			sharePrices.put(companies.get(i).getText().trim(), currentPrices.get(i).getText().trim());
 		}
 		driver.quit();
