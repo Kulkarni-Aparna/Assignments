@@ -6,7 +6,7 @@ import java.util.Set;
 import jxl.read.biff.BiffException;
 
 public class ReadHashMap {
-	public void test() throws BiffException, IOException {
+public static void main(String args[]) throws BiffException, IOException {
 		HashMap<String, String> xlsData = Stocks.stocksInXLS();
 		HashMap<String, String> webData = Stocks.stocksInWEB();
 		String stockPriceInXLS = xlsData.get("City Crops Agro");
