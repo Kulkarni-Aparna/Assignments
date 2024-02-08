@@ -14,9 +14,9 @@ public static void main(String args[]) throws BiffException, IOException {
 		for (String key : keyList) {
 			System.out.println(key);
 			if (xlsData.get(key).equals(webData.get(key)))
-				System.out.println("Pass for the " + key);
+				System.out.println("Stock price is same for " + key);
 			else
-				System.out.println("Fail for the " + key);
+				System.out.println("Stock price is different for " + key);
 		}
 	}
 }
